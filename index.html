@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatGPT Login</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background-color: #f6f8fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background: white;
+      padding: 2rem 3rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    .logo {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 1.5rem;
+      fill: #10a37f; /* ChatGPT green */
+    }
+    h1 {
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #24292e;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.6rem 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #d1d5da;
+      border-radius: 6px;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #10a37f;
+      box-shadow: 0 0 0 3px rgba(16,163,127,0.3);
+    }
+    button {
+      width: 100%;
+      padding: 0.6rem;
+      background-color: #10a37f;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0e8c6e;
+    }
+    .create-account {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #586069;
+    }
+    .create-account a {
+      color: #10a37f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .create-account a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <!-- ChatGPT logo SVG -->
+    <svg class="logo" viewBox="0 0 24 24" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 18c-2.577 0-4.936-1.217-6.395-3.123l3.398-1.962a4 4 0 005.994-5.994l1.962-3.398C18.783 7.064 20 9.423 20 12c0 4.418-3.582 8-8 8z" fill="#10a37f"/>
+    </svg>
+    <h1>Sign in to ChatGPT</h1>
+    <form action="#" method="POST">
+      <input type="text" name="login" placeholder="Username or email address" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Sign in</button>
+    </form>
+    <p class="create-account">
+      New to ChatGPT? <a href="#">Create an account</a>
+    </p>
+  </div>
+</body>
+</html>
